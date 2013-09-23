@@ -63,7 +63,6 @@ PSheriff@pdsa.com. Check out Paul's new code generator 'Haystack' at <br />
         {
             var text = File.ReadAllText(PathUtilities.GetAdjacentFile("sample.json"));
             var o = Event.DeserializeJson(text);
-            Assert.AreEqual(Expected, o.ToString());
             Approvals.Verify(o);
         }
     }
