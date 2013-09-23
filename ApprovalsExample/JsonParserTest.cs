@@ -55,7 +55,6 @@
             }
         }";
 
-            var o = Event.DeserializeJson(Source);
             const string Answer = @"Announced: False, Created: 1370985561000, Description: <p><strong>Talk Info :</strong></p>
 <p>The techniques for building applications have changed dramatically in the last <br />
 
@@ -97,6 +96,7 @@ Windows Phone and SQL Server. Paul can be reached via email at <br />
 PSheriff@pdsa.com. Check out Paul's new code generator 'Haystack' at <br />
 
 <a href=""http://www.CodeHaystack.com"">www.CodeHaystack.com</a>.</p>, Duration: 10800000, EventUrl: , Group: ApprovalsExample.Group, HowToFindUs: , Headcount: 0, Id: 124139172, MaybeRsvpCount: 0, Name: Paul D. Sheriff - Architecting Applications for Multiple User Interfaces, Status: upcoming, Time: 1378947600000, Updated: 1370985561000, UtcOffset: 0, Venue: ApprovalsExample.Venue, Visibility: public, WaitlistCount: 0, YesRsvpCount: 0";
+            var o = Event.DeserializeJson(Source);
             Assert.AreEqual(Answer, o.ToString());
         }
     }
