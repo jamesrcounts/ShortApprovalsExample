@@ -12,48 +12,6 @@
     [TestClass]
     public class JsonParserTest
     {
-        private const string Expected = @"Announced: False, Created: 1370985561000, Description: <p><strong>Talk Info :</strong></p>
-<p>The techniques for building applications have changed dramatically in the last <br />
-
-few years. Gone are the days of single-tier, battle-ship gray, boring user <br />
-
-interfaces. Users demand that your applications (or portions) run on more than <br />
-
-one device. This session will take you on a tour of how you should be architecting your application by breaking it up into services. You will learn how <br />
-
-to create your business rules and data layer as a service. This seminar will <br />
-
-assume you have some knowledge of .NET but have been developing <br />
-
-applications the old way and you are now looking to see how to use WCF and <br />
-
-the Model-View-View-Model (MVVM) design pattern to create applications that <br />
-
-can be run one more than one user interface platform. This session has many <br />
-
-demonstrations and you will be led step-by-step through the code. You will walk <br />
-
-away with a sample set of services that run on Silverlight, Windows Forms, <br />
-
-WPF, Windows Phone and ASP.NET.</p>
-<p> </p>
-<p><strong>About The Speaker</strong></p>
-<p>Paul D. Sheriff is the President of PDSA, Inc. (www.pdsa.com), a Microsoft <br />
-
-Partner in Southern California. Paul acts as the Microsoft Regional Director for <br />
-
-Southern California assisting the local Microsoft offices with several of their <br />
-
-events each year and being an evangelist for them. Paul has authored literally <br />
-
-hundreds of books, webcasts, videos and articles on .NET, WPF, Silverlight, <br />
-
-Windows Phone and SQL Server. Paul can be reached via email at <br />
-
-PSheriff@pdsa.com. Check out Paul's new code generator 'Haystack' at <br />
-
-<a href=""http://www.CodeHaystack.com"">www.CodeHaystack.com</a>.</p>, Duration: 10800000, EventUrl: , Group: ApprovalsExample.Group, HowToFindUs: , Headcount: 0, Id: 124139172, MaybeRsvpCount: 0, Name: Paul D. Sheriff - Architecting Applications for Multiple User Interfaces, Status: upcoming, Time: 1378947600000, Updated: 1370985561000, UtcOffset: 0, Venue: ApprovalsExample.Venue, Visibility: public, WaitlistCount: 0, YesRsvpCount: 0";
-
         /// <summary>
         /// Parse this JSON into a POCO object.
         /// </summary>
