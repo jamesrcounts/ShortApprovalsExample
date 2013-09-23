@@ -1,6 +1,8 @@
 ﻿namespace ApprovalsExample
 {
     using System.IO;
+    using ApprovalTests;
+    using ApprovalTests.Reporters;
     using ApprovalUtilities.Utilities;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -56,11 +58,13 @@ PSheriff@pdsa.com. Check out Paul's new code generator 'Haystack' at <br />
         /// Parse this JSON into a POCO object.
         /// </summary>
         [TestMethod]
+        [UseReporter(typeof(VisualStudioReporter))]
         public void ItConvertsJsonToPoco()
         {
             var text = File.ReadAllText(PathUtilities.GetAdjacentFile("sample.json"));
             var o = Event.DeserializeJson(text);
             Assert.AreEqual(Expected, o.ToString());
+            Approvals.Verify(o);
         }
     }
 }
