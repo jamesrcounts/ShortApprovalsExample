@@ -99,8 +99,8 @@ PSheriff@pdsa.com. Check out Paul's new code generator 'Haystack' at <br />
         [TestMethod]
         public void ItConvertsJsonToPoco()
         {
-            File.WriteAllText(PathUtilities.GetAdjacentFile("sample.json"), Source);
-            var o = Event.DeserializeJson(Source);
+            var text = File.ReadAllText(PathUtilities.GetAdjacentFile("sample.json"));
+            var o = Event.DeserializeJson(text);
             Assert.AreEqual(Expected, o.ToString());
         }
     }
